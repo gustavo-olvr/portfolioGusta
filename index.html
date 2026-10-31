@@ -3,11 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Gustavo Oliveira | Desenvolvedor Backend e Full Stack</title>
     <meta
       name="description"
       content="Portfólio de Gustavo Oliveira, desenvolvedor Backend e Full Stack em formação. Projetos com JavaScript, Node.js, React, Express e Firebase."
     />
-    <title>Gustavo Oliveira | Desenvolvedor Backend e Full Stack</title>
+    <link rel="canonical" href="https://portfolio-gusta-eight.vercel.app/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1113" media="(prefers-color-scheme: dark)" />
+
+    <!-- Pré-visualização ao compartilhar o link (LinkedIn, WhatsApp...) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Gustavo Oliveira | Desenvolvedor Backend e Full Stack" />
+    <meta
+      property="og:description"
+      content="Portfólio de Gustavo Oliveira: projetos com JavaScript, Node.js, React e Firebase."
+    />
+    <meta property="og:url" content="https://portfolio-gusta-eight.vercel.app/" />
+    <!-- Crie o arquivo og.png (1200x630) na mesma pasta deste index.html -->
+    <meta property="og:image" content="https://portfolio-gusta-eight.vercel.app/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Roda antes de tudo: ativa as animações e aplica o tema salvo, sem piscar a tela -->
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved) document.documentElement.dataset.theme = saved;
+      } catch {}
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,22 +44,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
     <!-- Ícones das habilidades (usados com <use href="#i-...">) -->
     <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
       <defs>
         <symbol id="i-js" viewBox="0 0 24 24">
           <rect width="24" height="24" rx="3" fill="#f7df1e" />
-          <text
-            x="21"
-            y="21"
-            text-anchor="end"
-            font-family="system-ui,sans-serif"
-            font-size="11"
-            font-weight="800"
-            fill="#111"
-          >
-            JS
-          </text>
+          <text x="21" y="21" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="#111">JS</text>
         </symbol>
         <symbol id="i-node" viewBox="0 0 24 24">
           <path d="M12 1.5l9 5.2v10.6l-9 5.2-9-5.2V6.7z" fill="#5fa04e" />
@@ -40,73 +59,23 @@
         </symbol>
         <symbol id="i-ex" viewBox="0 0 24 24">
           <rect width="24" height="24" rx="4" fill="#6b7280" />
-          <text
-            x="12"
-            y="16.5"
-            text-anchor="middle"
-            font-family="system-ui,sans-serif"
-            font-size="11"
-            font-weight="700"
-            fill="#fff"
-          >
-            ex
-          </text>
+          <text x="12" y="16.5" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#fff">ex</text>
         </symbol>
         <symbol id="i-api" viewBox="0 0 24 24">
           <rect width="24" height="24" rx="4" fill="#2349d6" />
-          <text
-            x="12"
-            y="16"
-            text-anchor="middle"
-            font-family="ui-monospace,monospace"
-            font-size="11"
-            font-weight="700"
-            fill="#fff"
-          >
-            { }
-          </text>
+          <text x="12" y="16" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="700" fill="#fff">{ }</text>
         </symbol>
         <symbol id="i-jwt" viewBox="0 0 24 24">
           <rect width="24" height="24" rx="4" fill="#d63aff" />
-          <text
-            x="12"
-            y="15.5"
-            text-anchor="middle"
-            font-family="system-ui,sans-serif"
-            font-size="8.5"
-            font-weight="800"
-            fill="#fff"
-          >
-            JWT
-          </text>
+          <text x="12" y="15.5" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8.5" font-weight="800" fill="#fff">JWT</text>
         </symbol>
         <symbol id="i-html" viewBox="0 0 24 24">
           <path d="M3 2h18l-1.6 17.2L12 22l-7.4-2.8z" fill="#e44d26" />
-          <text
-            x="12"
-            y="16"
-            text-anchor="middle"
-            font-family="system-ui,sans-serif"
-            font-size="11"
-            font-weight="800"
-            fill="#fff"
-          >
-            5
-          </text>
+          <text x="12" y="16" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="#fff">5</text>
         </symbol>
         <symbol id="i-css" viewBox="0 0 24 24">
           <path d="M3 2h18l-1.6 17.2L12 22l-7.4-2.8z" fill="#1572b6" />
-          <text
-            x="12"
-            y="16"
-            text-anchor="middle"
-            font-family="system-ui,sans-serif"
-            font-size="11"
-            font-weight="800"
-            fill="#fff"
-          >
-            3
-          </text>
+          <text x="12" y="16" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="#fff">3</text>
         </symbol>
         <symbol id="i-react" viewBox="0 0 24 24">
           <g fill="none" stroke="#61dafb" stroke-width="1.3">
@@ -117,10 +86,7 @@
           <circle cx="12" cy="12" r="1.9" fill="#61dafb" />
         </symbol>
         <symbol id="i-fire" viewBox="0 0 24 24">
-          <path
-            d="M4.5 18L6.9 3.6c.1-.5.7-.6.9-.2L10 7.8l1.7-3.1c.2-.4.7-.4.9 0L19.5 18l-7.5 4z"
-            fill="#ffa000"
-          />
+          <path d="M4.5 18L6.9 3.6c.1-.5.7-.6.9-.2L10 7.8l1.7-3.1c.2-.4.7-.4.9 0L19.5 18l-7.5 4z" fill="#ffa000" />
           <path d="M4.5 18l7.5-7 7.5 7-7.5 4z" fill="#f57c00" opacity=".75" />
         </symbol>
         <symbol id="i-sql" viewBox="0 0 24 24">
@@ -130,15 +96,7 @@
           </g>
         </symbol>
         <symbol id="i-git" viewBox="0 0 24 24">
-          <rect
-            x="5"
-            y="5"
-            width="14"
-            height="14"
-            rx="2"
-            transform="rotate(45 12 12)"
-            fill="#f05133"
-          />
+          <rect x="5" y="5" width="14" height="14" rx="2" transform="rotate(45 12 12)" fill="#f05133" />
           <g stroke="#fff" stroke-width="1.5" fill="#fff">
             <path d="M9 8.5v7M9 11.5l5 .5" fill="none" />
             <circle cx="9" cy="8.5" r="1.4" />
@@ -147,78 +105,54 @@
           </g>
         </symbol>
         <symbol id="i-gh" viewBox="0 0 16 16">
-          <path
-            fill="currentColor"
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-          />
+          <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
         </symbol>
         <symbol id="i-vs" viewBox="0 0 24 24">
-          <path
-            d="M17.5 2L22 4v16l-4.5 2L7 12.8 3.5 15.5 2 14.7V9.3l1.5-.8L7 11.2z"
-            fill="#2f80d6"
-          />
+          <path d="M17.5 2L22 4v16l-4.5 2L7 12.8 3.5 15.5 2 14.7V9.3l1.5-.8L7 11.2z" fill="#2f80d6" />
         </symbol>
       </defs>
     </svg>
+
     <!-- Fundo animado (desenhado pelo script.js) -->
     <canvas id="bg" aria-hidden="true"></canvas>
+
     <!-- Topo: logo, menu e botão de tema -->
     <header class="topbar">
       <div class="wrap">
-        <a class="brand" href="#inicio" aria-label="Gustavo Oliveira, início"
-          >Gustavo Oliveira<i>.</i></a
-        >
-        <div style="display: flex; gap: 8px; align-items: center">
+        <a class="brand" href="#inicio" aria-label="Gustavo Oliveira, início">Gustavo Oliveira<i>.</i></a>
+        <div class="topbar-actions">
           <nav id="nav" aria-label="Navegação principal">
-            <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a
-            ><a href="#habilidades">Habilidades</a><a href="#contato">Contato</a>
+            <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#habilidades">Habilidades</a><a href="#contato">Contato</a>
           </nav>
-          <button
-            class="icon-btn"
-            id="theme"
-            type="button"
-            aria-label="Alternar tema claro e escuro"
-          >
-            ◐
+          <button class="icon-btn" id="theme" type="button" aria-label="Alternar tema claro e escuro" aria-pressed="false">
+            <span aria-hidden="true">◐</span>
           </button>
-          <button
-            class="icon-btn menu-btn"
-            id="menu"
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-            aria-controls="nav"
-          >
-            ☰
+          <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+            <span aria-hidden="true">☰</span>
           </button>
         </div>
       </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
+    <main id="conteudo">
       <!-- Início -->
       <div class="wrap hero" id="inicio">
         <div>
           <p class="status">while (!sucesso) { tentarDeNovo(); }</p>
           <h1>Backend que funciona, <em>interfaces</em> que fazem sentido.</h1>
           <p class="lead">
-            Sou <strong>Gustavo Oliveira</strong>, estudante de Análise e Desenvolvimento de
-            Sistemas. Construo APIs e aplicações web com JavaScript, Node.js e React, e aprendo mais
-            a cada projeto que coloco no ar.
+            Sou <strong>Gustavo Oliveira</strong>, estudante de Análise e Desenvolvimento de Sistemas. Construo APIs e aplicações web com
+            JavaScript, Node.js e React, e aprendo mais a cada projeto que coloco no ar.
           </p>
           <div class="actions">
             <a class="btn" href="#projetos">Ver projetos</a>
-            <a
-              class="btn ghost"
-              href="https://github.com/gustavo-olvr"
-              target="_blank"
-              rel="noreferrer noopener"
-              >GitHub ↗</a
-            >
+            <!-- Quando tiver o currículo, descomente e coloque o PDF na mesma pasta:
+            <a class="btn ghost" href="curriculo-gustavo-oliveira.pdf" download>Baixar currículo</a> -->
+            <a class="btn ghost" href="https://github.com/gustavo-olvr" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
           </div>
         </div>
-        <div class="code" aria-label="Trecho de código ilustrativo">
+        <div class="code" role="img" aria-label="Trecho de código ilustrativo: um objeto JavaScript com foco em backend, stack Node.js e React">
           <div class="code-bar"><b></b><b></b><b></b><span>gustavo.js</span></div>
           <pre><span class="k">const</span> gustavo = {
   foco: <span class="s">'Backend'</span>,
@@ -248,34 +182,21 @@
                 </ul>
                 <h4>Contato</h4>
                 <ul>
-                  <li>
-                    📧 E-mail: <a href="mailto:gustavo098122@gmail.com">gustavo098122@gmail.com</a>
-                  </li>
+                  <li>📧 E-mail: <a href="mailto:gustavo098122@gmail.com">gustavo098122@gmail.com</a></li>
                   <li>
                     💼 LinkedIn:
-                    <a
-                      href="https://www.linkedin.com/in/gustavo-oliveira-dev"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >linkedin.com/in/gustavo-oliveira-dev</a
-                    >
+                    <a href="https://www.linkedin.com/in/gustavo-oliveira-dev" target="_blank" rel="noreferrer noopener">linkedin.com/in/gustavo-oliveira-dev</a>
                   </li>
                   <li>
                     🐙 GitHub:
-                    <a
-                      href="https://github.com/gustavo-olvr"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >github.com/gustavo-olvr</a
-                    >
+                    <a href="https://github.com/gustavo-olvr" target="_blank" rel="noreferrer noopener">github.com/gustavo-olvr</a>
                   </li>
                   <li>📍 Atibaia, SP</li>
                 </ul>
                 <h4>Objetivo</h4>
                 <p>
-                  Conseguir minha primeira vaga como desenvolvedor backend, evoluindo constantemente
-                  e construindo projetos reais. Quero contribuir com o time, aprender com pessoas
-                  experientes e transformar conhecimento em entregas consistentes.
+                  Conseguir minha primeira vaga como desenvolvedor backend, evoluindo constantemente e construindo projetos reais. Quero
+                  contribuir com o time, aprender com pessoas experientes e transformar conhecimento em entregas consistentes.
                 </p>
               </div>
             </div>
@@ -287,71 +208,64 @@
       <section id="projetos">
         <div class="wrap">
           <h2 class="rv">Projetos que saíram do papel</h2>
-          <p class="rv" style="color: var(--muted); max-width: 60ch; margin: 0">
-            Uma seleção de projetos de estudo e aplicações web. Os repositórios mostram os detalhes
-            técnicos e a evolução do código.
+          <p class="rv section-intro">
+            Aplicações web que publiquei, entre projetos de estudo e de cliente. O código de cada uma está no meu GitHub.
           </p>
           <div class="grid">
+            <!-- TODO: troque a descrição por algo específico (o que o sistema controla? que decisão técnica você tomou?)
+                 e adicione o link do repositório: <a href="https://github.com/gustavo-olvr/NOME-DO-REPO" ...>Ver código ↗</a> -->
             <article class="card rv">
-              <div class="thumb t1">
+              <div class="thumb t1" aria-hidden="true">
                 <div><span>Web app</span><span>React + Firebase</span></div>
                 <strong>Oikawa Flores</strong>
               </div>
               <div class="body">
                 <h3>Oikawa Flores</h3>
                 <p>
-                  Sistema web para organizar os processos de uma operação de flores, criado para
-                  praticar interfaces e integração com dados.
+                  Sistema web para organizar os processos de uma operação de flores. Montei a interface em React e usei o Firebase para guardar
+                  e consultar os dados.
                 </p>
-                <div class="tags">
-                  <span>React</span><span>Firebase</span><span>JavaScript</span>
-                </div>
-                <a
-                  href="https://sistema-flores.vercel.app"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Abrir aplicação ↗</a
-                >
+                <div class="tags"><span>React</span><span>Firebase</span><span>JavaScript</span></div>
+                <a href="https://sistema-flores.vercel.app" target="_blank" rel="noreferrer noopener" aria-label="Abrir aplicação Oikawa Flores (abre em nova aba)">Abrir aplicação ↗</a>
               </div>
             </article>
+
+            <!-- TODO: confirme a descrição e adicione o link do repositório -->
             <article class="card rv">
-              <div class="thumb t4">
+              <div class="thumb t4" aria-hidden="true">
                 <div><span>Web</span><span>Eventos</span></div>
                 <strong>Yurig Events</strong>
               </div>
               <div class="body">
                 <h3>Yurig Events</h3>
                 <p>
-                  Site para eventos, focado na construção de páginas e na apresentação clara das
-                  informações para o visitante.
+                  Site para eventos, com páginas pensadas para apresentar as informações com clareza para quem visita, no celular e no
+                  computador.
                 </p>
                 <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                <a
-                  href="https://projeto-teste-yuri.vercel.app"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Abrir aplicação ↗</a
-                >
+                <a href="https://projeto-teste-yuri.vercel.app" target="_blank" rel="noreferrer noopener" aria-label="Abrir aplicação Yurig Events (abre em nova aba)">Abrir aplicação ↗</a>
               </div>
             </article>
+
+            <!-- TODO: 1) confirme as tecnologias dos chips; 2) troque o href pelo domínio fixo da Vercel
+                 (Settings > Domains), este link com hash é de preview e pode parar de funcionar;
+                 3) acrescente o que o site tem (serviços, contato, WhatsApp...) -->
             <article class="card rv">
-              <div class="thumb t3">
-                <div><span>Web</span><span>Nutrição</span></div>
+              <div class="thumb t3" aria-hidden="true">
+                <div><span>Cliente real</span><span>Nutrição</span></div>
                 <strong>Leo Gruber</strong>
               </div>
               <div class="body">
                 <h3>Leo Gruber, nutricionista</h3>
-                <p>Projeto web desenvolvido para o Leo Gruber, profissional de nutrição.</p>
-                <a
-                  href="https://projeto-leo-gruber-c85w5fb6d-gustavo-olvrs-projects.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Abrir aplicação ↗</a
-                >
+                <p>
+                  Site profissional criado para um cliente real, o nutricionista Leo Gruber. Entendi o que ele precisava, desenvolvi e publiquei.
+                </p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://projeto-leo-gruber-c85w5fb6d-gustavo-olvrs-projects.vercel.app/" target="_blank" rel="noreferrer noopener" aria-label="Abrir aplicação Leo Gruber (abre em nova aba)">Abrir aplicação ↗</a>
               </div>
             </article>
           </div>
-          <p class="note">Alguns projetos são experiências de estudo e continuam em evolução.</p>
+          <p class="note">Cada projeto me ensinou algo diferente, e o código está aberto no GitHub.</p>
         </div>
       </section>
 
@@ -360,53 +274,35 @@
         <div class="wrap two rv">
           <h2>Ferramentas para resolver problemas.</h2>
           <div class="skills">
-            <p style="color: var(--muted); margin: 0">
-              Tecnologias que venho estudando e usando nos meus projetos, sempre com prática e
-              leitura de documentação.
+            <p class="section-intro">
+              Tecnologias que venho estudando e usando nos meus projetos, sempre com prática e leitura de documentação.
             </p>
             <div>
               <h3>Backend</h3>
               <div class="chips">
-                <span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-js" /></svg>JavaScript</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-node" /></svg>Node.js</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-ex" /></svg>Express</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-api" /></svg>APIs REST</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-jwt" /></svg>JWT</span
-                >
+                <span><svg class="ic" aria-hidden="true"><use href="#i-js" /></svg>JavaScript</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-node" /></svg>Node.js</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-ex" /></svg>Express</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-api" /></svg>APIs REST</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-jwt" /></svg>JWT</span>
               </div>
             </div>
             <div>
               <h3>Frontend</h3>
               <div class="chips">
-                <span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-html" /></svg>HTML5</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-css" /></svg>CSS3</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-react" /></svg>React</span
-                >
+                <span><svg class="ic" aria-hidden="true"><use href="#i-html" /></svg>HTML5</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-css" /></svg>CSS3</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-react" /></svg>React</span>
               </div>
             </div>
             <div>
               <h3>Dados e ferramentas</h3>
               <div class="chips">
-                <span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-fire" /></svg>Firebase</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-sql" /></svg>SQL (em
-                  estudo)</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-git" /></svg>Git</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-gh" /></svg>GitHub</span
-                ><span
-                  ><svg class="ic" aria-hidden="true"><use href="#i-vs" /></svg>VS Code</span
-                >
+                <span><svg class="ic" aria-hidden="true"><use href="#i-fire" /></svg>Firebase</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-sql" /></svg>SQL (em estudo)</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-git" /></svg>Git</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-gh" /></svg>GitHub</span>
+                <span><svg class="ic" aria-hidden="true"><use href="#i-vs" /></svg>VS Code</span>
               </div>
             </div>
           </div>
@@ -418,25 +314,13 @@
         <div class="wrap rv">
           <h2>Vamos construir algo juntos?</h2>
           <p>
-            Estou em busca de uma oportunidade para começar minha trajetória profissional em
-            tecnologia e continuar evoluindo como desenvolvedor.
+            Estou em busca de uma oportunidade para começar minha trajetória profissional em tecnologia e continuar evoluindo como
+            desenvolvedor.
           </p>
-          <div class="actions" style="margin-top: 28px">
+          <div class="actions spaced">
             <a class="btn" href="mailto:gustavo098122@gmail.com">Enviar e-mail</a>
-            <a
-              class="btn ghost"
-              href="https://www.linkedin.com/in/gustavo-oliveira-dev"
-              target="_blank"
-              rel="noreferrer noopener"
-              >LinkedIn ↗</a
-            >
-            <a
-              class="btn ghost"
-              href="https://github.com/gustavo-olvr"
-              target="_blank"
-              rel="noreferrer noopener"
-              >GitHub ↗</a
-            >
+            <a class="btn ghost" href="https://www.linkedin.com/in/gustavo-oliveira-dev" target="_blank" rel="noreferrer noopener">LinkedIn ↗</a>
+            <a class="btn ghost" href="https://github.com/gustavo-olvr" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
             <button class="btn ghost" id="copy" type="button" hidden>Copiar e-mail</button>
           </div>
           <p id="hint" role="status" aria-live="polite"></p>
@@ -447,8 +331,7 @@
     <!-- Rodapé -->
     <footer>
       <div class="wrap">
-        <span>Gustavo Oliveira © <span id="year">2026</span></span
-        ><a href="#inicio">Voltar ao topo ↑</a>
+        <span>Gustavo Oliveira © <span id="year">2026</span></span><a href="#inicio">Voltar ao topo ↑</a>
       </div>
     </footer>
 
