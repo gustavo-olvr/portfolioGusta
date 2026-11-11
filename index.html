@@ -1,133 +1,1005 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Gustavo Oliveira, desenvolvedor Full Stack.">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<meta property="og:title" content="Gustavo Oliveira | Desenvolvedor Full Stack">
-<meta property="og:description" content="Portfólio de Gustavo Oliveira, desenvolvedor Full Stack.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#000000">
-<title>Gustavo Oliveira | Desenvolvedor Full Stack</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><div class="wrap">
-<div class="brand"><strong>Gustavo Oliveira</strong><span data-en="Full Stack Developer">Desenvolvedor Full Stack</span></div>
-<nav><a href="#inicio" data-en="Home">Início</a><a href="#sobre" data-en="About">Sobre</a><a href="#stack">Stack</a><a href="#portfolio" data-en="Portfolio">Portfólio</a><a href="#contato" data-en="Contact">Contato</a></nav>
-<div class="tools"><button class="tb" id="lang" aria-label="Mudar idioma / Change language">🇧🇷 / 🇺🇸</button><button class="tb" id="tema" aria-label="Alternar tema">◐</button></div>
-</div></header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Gustavo Oliveira, desenvolvedor Full Stack." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta property="og:title" content="Gustavo Oliveira | Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Portfólio de Gustavo Oliveira, desenvolvedor Full Stack."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#000000" />
+    <title>Gustavo Oliveira | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header>
+      <div class="container">
+        <div class="brand">
+          <strong>Gustavo Oliveira</strong>
+          <span data-en="Full Stack Developer">Desenvolvedor Full Stack</span>
+        </div>
+        <nav>
+          <a href="#inicio" data-en="Home">Início</a>
+          <a href="#sobre" data-en="About">Sobre</a>
+          <a href="#stack">Stack</a>
+          <a href="#portfolio" data-en="Portfolio">Portfólio</a>
+          <a href="#contato" data-en="Contact">Contato</a>
+        </nav>
+        <div class="header-tools">
+          <button class="tool-btn" id="btn-lang" aria-label="Mudar idioma / Change language">
+            🇧🇷 / 🇺🇸
+          </button>
+          <button class="tool-btn" id="btn-theme" aria-label="Alternar tema">◐</button>
+        </div>
+      </div>
+    </header>
 
-<main>
-<div class="wrap">
-<div class="hero" id="inicio">
-<div>
-<h1><span style="background:none;color:var(--ink);-webkit-text-fill-color:var(--ink);animation:none" data-en="Developer">Desenvolvedor</span><span data-en="Full Stack">Full Stack</span></h1>
-<p class="stack-line">Node.js • Express • React</p>
-<p class="lead" data-en="Full Stack developer with live projects, REST APIs, JWT authentication and React interfaces. Looking for my first role to grow alongside experienced people.">Desenvolvedor Full Stack com projetos no ar, APIs REST, autenticação com JWT e interfaces em React. Em busca da primeira vaga para crescer ao lado de pessoas experientes.</p>
-<div class="btns">
-<button class="btn p" id="cv"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg> <span data-en="Download résumé">Baixar currículo</span></button>
-<a class="btn" href="https://github.com/gustavo-olvr"><svg class="ic f" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
-<a class="btn" href="https://www.linkedin.com/in/gustavo-oliveira-dev"><svg class="ic f" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
-</div>
-</div>
-<div class="pf"><i class="r3"></i><i class="r1"></i><i class="r2"></i><div class="im"><img id="photo" src="assets/img/gustavo.jpg" alt="Foto de Gustavo Oliveira" width="440" height="440"></div></div>
-</div>
-</div>
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+      <div class="container">
+        <!-- ===== INÍCIO (hero) ===== -->
+        <div class="hero" id="inicio">
+          <div>
+            <h1>
+              <span class="title-line" data-en="Developer">Desenvolvedor</span>
+              <span class="title-line title-gradient" data-en="Full Stack">Full Stack</span>
+            </h1>
+            <p class="hero-stack">Node.js • Express • React</p>
+            <p
+              class="hero-lead"
+              data-en="Full Stack developer with live projects, REST APIs, JWT authentication and React interfaces. Looking for my first role to grow alongside experienced people."
+            >
+              Desenvolvedor Full Stack com projetos no ar, APIs REST, autenticação com JWT e
+              interfaces em React. Em busca da primeira vaga para crescer ao lado de pessoas
+              experientes.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="btn-resume">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <use href="#i-download" />
+                </svg>
+                <span data-en="Download résumé">Baixar currículo</span>
+              </button>
+              <a class="btn" href="https://github.com/gustavo-olvr">
+                <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg>
+                GitHub
+              </a>
+              <a class="btn" href="https://www.linkedin.com/in/gustavo-oliveira-dev">
+                <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                  <use href="#i-linkedin" />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <div class="profile">
+            <i class="ring-dashed"></i>
+            <i class="ring-pulse"></i>
+            <i class="ring-inner"></i>
+            <div class="profile-photo">
+              <img
+                id="photo"
+                src="assets/img/gustavo.jpg"
+                alt="Foto de Gustavo Oliveira"
+                width="440"
+                height="440"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-<section class="s" id="sobre"><div class="wrap">
-<p class="eb" data-en="About me">Sobre mim</p>
-<h2 class="rv" data-en="Education and experience">Formação e experiência</h2>
-<p class="sub rv" data-en="I like turning ideas into complete products: I model data, design APIs and build interfaces. I have already published projects online, including a real client’s website.">Gosto de transformar ideias em produtos completos: modelo dados, desenho APIs e construo interfaces. Já publiquei projetos no ar, incluindo o site de um cliente real.</p>
-<div class="two rv">
-<div class="card"><h3><em><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg></em><span data-en="Education">Formação</span></h3>
-<ul class="tl">
-<li><b data-en="Systems Analysis and Development">Análise e Desenvolvimento de Sistemas</b><span class="d" data-en="In progress">Em andamento</span><p data-en="Degree focused on software development.">Graduação com foco no desenvolvimento de software.</p></li>
-<li><b>Backend Fullstack</b><span class="o">OneBitCode</span><br><span class="d" data-en="In progress">Em andamento</span><p data-en="Node.js, Express, JWT and SQL.">Node.js, Express, JWT e SQL.</p></li>
-</ul></div>
-<div class="card"><h3><em><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></svg></em><span data-en="Real projects">Projetos reais</span></h3>
-<ul class="tl">
-<li><b data-en="Website for a nutritionist">Site para um nutricionista</b><span class="o">Leo Gruber</span><br><span class="d" data-en="Completed and published">Concluído e publicado</span>
-<ul><li data-en="Gathered the client’s needs.">Levantamento das necessidades do cliente.</li><li data-en="Built the site with HTML, CSS and JavaScript.">Desenvolvimento do site com HTML, CSS e JavaScript.</li><li data-en="Published online on Vercel.">Publicação online na Vercel.</li></ul></li>
-</ul></div>
-</div>
-</div></section>
+      <!-- ===== SOBRE: formação e experiência ===== -->
+      <section class="section-block" id="sobre">
+        <div class="container">
+          <p class="eyebrow" data-en="About me">Sobre mim</p>
+          <h2 class="reveal" data-en="Education and experience">Formação e experiência</h2>
+          <p
+            class="section-sub reveal"
+            data-en="I like turning ideas into complete products: I model data, design APIs and build interfaces. I have already published projects online, including a real client’s website."
+          >
+            Gosto de transformar ideias em produtos completos: modelo dados, desenho APIs e construo
+            interfaces. Já publiquei projetos no ar, incluindo o site de um cliente real.
+          </p>
+          <div class="grid-two reveal">
+            <div class="card">
+              <h3>
+                <em>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#i-graduation-cap" />
+                  </svg>
+                </em>
+                <span data-en="Education">Formação</span>
+              </h3>
+              <ul class="timeline">
+                <li>
+                  <b data-en="Systems Analysis and Development">
+                    Análise e Desenvolvimento de Sistemas
+                  </b>
+                  <span class="date" data-en="In progress">Em andamento</span>
+                  <p data-en="Degree focused on software development.">
+                    Graduação com foco no desenvolvimento de software.
+                  </p>
+                </li>
+                <li>
+                  <b data-en="HTML, CSS and JavaScript courses">
+                    Cursos de HTML 5, CSS 3 e JavaScript
+                  </b>
+                  <span class="org">OneBitCode</span>
+                  <br />
+                  <span class="date" data-en="Completed in 2025">Concluídos em 2025</span>
+                  <p
+                    data-en="HTML 5, CSS 3, JavaScript I and JavaScript II, with certificates in the Portfolio section."
+                  >
+                    HTML 5, CSS 3, JavaScript I e JavaScript II, com certificados na seção
+                    Portfólio.
+                  </p>
+                </li>
+                <li>
+                  <b>Backend Fullstack</b>
+                  <span class="org">OneBitCode</span>
+                  <br />
+                  <span class="date" data-en="In progress">Em andamento</span>
+                  <p data-en="Node.js, Express, JWT and SQL.">Node.js, Express, JWT e SQL.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>
+                <em>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#i-briefcase" />
+                  </svg>
+                </em>
+                <span data-en="Real projects">Projetos reais</span>
+              </h3>
+              <ul class="timeline">
+                <li>
+                  <b data-en="Website for a nutritionist">Site para um nutricionista</b>
+                  <span class="org">Leo Gruber</span>
+                  <br />
+                  <span class="date" data-en="Completed and published">Concluído e publicado</span>
+                  <ul>
+                    <li data-en="Gathered the client’s needs.">
+                      Levantamento das necessidades do cliente.
+                    </li>
+                    <li data-en="Built the site with HTML, CSS and JavaScript.">
+                      Desenvolvimento do site com HTML, CSS e JavaScript.
+                    </li>
+                    <li data-en="Published online on Vercel.">Publicação online na Vercel.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="s" id="stack"><div class="wrap">
-<p class="eb" data-en="What I use">O que eu uso</p>
-<h2 class="rv v" data-en="Technologies">Tecnologias</h2>
-<p class="sub rv" data-en="The tools I use to build and ship my projects.">As ferramentas que uso para construir e publicar meus projetos.</p>
-<h4 class="cat">Backend</h4>
-<div class="tiles rv">
-<div class="tile" style="--c:#5FA04E"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg>Node.js</div>
-<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.262 16.666h1.146l6.975-9.325H19.22zm9.778 1.441v.004l-4.334-5.706-.557.74 4.873 6.682H.945V4.173h9.505l5.026 6.7.574-.772-4.374-5.928h.003l-.719-.945H0v17.544h24zM10.917 8.705a3.8 3.8 0 0 0-1.292-1.183q-.796-.45-1.916-.45c-.746 0-1.37.14-1.906.424a3.76 3.76 0 0 0-1.31 1.12 4.9 4.9 0 0 0-.75 1.581 7.17 7.17 0 0 0 0 3.696c.148.567.402 1.101.75 1.573a3.5 3.5 0 0 0 1.31 1.066q.803.39 1.906.389 1.77 0 2.739-.868.966-.867 1.328-2.457h-1.139q-.271 1.084-.977 1.734-.704.651-1.952.65-.812 0-1.392-.342a3.1 3.1 0 0 1-.957-.869 3.5 3.5 0 0 1-.551-1.182 5 5 0 0 1-.17-1.133 9 9 0 0 0-.015-.286 4.5 4.5 0 0 1 .015-.829c.047-.418.147-.83.296-1.223A3.7 3.7 0 0 1 5.54 9.05a2.9 2.9 0 0 1 .922-.742q.541-.28 1.246-.28c.47 0 .869.093 1.23.28q.541.281.922.742.379.461.587 1.057t.225 1.246H5.625l.004.957h6.182a7.3 7.3 0 0 0-.18-1.924 4.9 4.9 0 0 0-.715-1.68z"/></svg>Express</div>
-<div class="tile" style="--c:#D63AFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.2 0v6.456L12 8.928l1.8-2.472V0zm3.6 6.456v3.072l2.904-.96L20.52 3.36l-2.928-2.136zm2.904 2.112l-1.8 2.496 2.928.936 6.144-1.992-1.128-3.432zM17.832 12l-2.928.936 1.8 2.496 6.144 1.992 1.128-3.432zm-1.128 3.432l-2.904-.96v3.072l3.792 5.232 2.928-2.136zM13.8 17.544L12 15.072l-1.8 2.472V24h3.6zm-3.6 0v-3.072l-2.904.96L3.48 20.64l2.928 2.136zm-2.904-2.112l1.8-2.496L6.168 12 .024 13.992l1.128 3.432zM6.168 12l2.928-.936-1.8-2.496-6.144-1.992-1.128 3.432zm1.128-3.432l2.904.96V6.456L6.408 1.224 3.48 3.36Z"/></svg>JWT</div>
-<div class="tile" style="--c:#2DD4BF"><svg class="lu" viewBox="0 0 24 24" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1" /><rect x="2" y="16" width="6" height="6" rx="1" /><rect x="9" y="2" width="6" height="6" rx="1" /><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /><path d="M12 12V8" /></svg>REST APIs</div>
-</div>
-<h4 class="cat">Front-end</h4>
-<div class="tiles rv">
-<div class="tile" style="--c:#61DAFB"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg>React</div>
-<div class="tile" style="--c:#F7DF1E"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>JavaScript</div>
-<div class="tile" style="--c:#E34F26"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>HTML5</div>
-<div class="tile" style="--c:#1572B6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></svg>CSS3</div>
-</div>
-<h4 class="cat" data-en="Data and tools">Dados e ferramentas</h4>
-<div class="tiles rv">
-<div class="tile" style="--c:#FFCA28"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569-.826-.991-1.535-1.832-1.884-2.245a146 146 0 0 0-.488-.576l-.207-.245-.113-.133-.022-.032-.01-.005L12.57 0l-.609.488c-1.555 1.246-2.828 2.851-3.681 4.64-.523 1.064-.864 2.105-1.043 3.176-.047.241-.088.489-.121.738-.209-.017-.421-.028-.632-.033-.018-.001-.035-.002-.059-.003a7.46 7.46 0 0 0-2.28.274l-.317.089-.163.286c-.765 1.342-1.198 2.869-1.252 4.416-.07 2.01.477 3.954 1.583 5.625 1.082 1.633 2.61 2.882 4.42 3.611l.236.095.071.025.003-.001a9.59 9.59 0 0 0 2.941.568q.171.006.342.006c1.273 0 2.513-.249 3.69-.742l.008.004.313-.145a9.63 9.63 0 0 0 3.927-3.335c1.01-1.49 1.577-3.234 1.641-5.042.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558-1.135-1.12-1.967-2.352-2.475-3.665-.543-1.404-.87-2.74-.974-3.975.48.157.922.366 1.315.622 1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028-.771.21-1.565.302-2.369.273a8 8 0 0 1-.373-.022c.458-.394.869-.823 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398-.647-.421-1.385-.741-2.194-.95.011-.134.026-.268.043-.4.014-.113.03-.216.046-.313.133-.689.332-1.37.589-2.025.099-.25.206-.499.321-.74l.004-.008c.177-.358.376-.719.61-1.105l.092-.152-.003-.001c.544-.851 1.197-1.627 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237 1.291 1.549 2.966 3.583 3.612 4.48 1.277 1.771 1.893 3.579 1.83 5.375-.049 1.395-.461 2.755-1.195 3.933-.694 1.116-1.661 2.05-2.8 2.708-.636-.318-1.559-.839-2.539-1.599.79-1.575.952-3.28.479-5.072zm-2.575 5.397c-.725.939-1.587 1.55-2.09 1.856-.081-.029-.163-.06-.243-.093l-.065-.026c-1.49-.616-2.747-1.656-3.635-3.01-.907-1.384-1.356-2.993-1.298-4.653.041-1.19.338-2.327.882-3.379.316-.07.638-.114.96-.131l.084-.002c.162-.003.324-.003.478 0 .227.011.454.035.677.07.073 1.513.445 3.145 1.105 4.852.637 1.644 1.694 3.162 3.144 4.515z"/></svg>Firebase</div>
-<div class="tile" style="--c:#4F8BD8"><svg class="lu" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></svg><span data-en="SQL (studying)">SQL (em estudo)</span></div>
-<div class="tile" style="--c:#F05032"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></svg>Git</div>
-<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</div>
-<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 1.608 12 20.784H0Z"/></svg>Vercel</div>
-</div>
-</div></section>
+      <!-- ===== STACK: tecnologias ===== -->
+      <section class="section-block" id="stack">
+        <div class="container">
+          <p class="eyebrow" data-en="What I use">O que eu uso</p>
+          <h2 class="reveal title-soft" data-en="Technologies">Tecnologias</h2>
+          <p class="section-sub reveal" data-en="The tools I use to build and ship my projects.">
+            As ferramentas que uso para construir e publicar meus projetos.
+          </p>
+          <h4 class="tech-category">Backend</h4>
+          <div class="tech-grid reveal">
+            <div class="tech-tile" style="--brand-color: #5fa04e">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nodejs" /></svg>
+              Node.js
+            </div>
+            <div class="tech-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-express" /></svg>
+              Express
+            </div>
+            <div class="tech-tile" style="--brand-color: #d63aff">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-jwt" /></svg>
+              JWT
+            </div>
+            <div class="tech-tile" style="--brand-color: #2dd4bf">
+              <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-network" />
+              </svg>
+              REST APIs
+            </div>
+          </div>
+          <h4 class="tech-category">Front-end</h4>
+          <div class="tech-grid reveal">
+            <div class="tech-tile" style="--brand-color: #61dafb">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-react" /></svg>
+              React
+            </div>
+            <div class="tech-tile" style="--brand-color: #f7df1e">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-js" /></svg>
+              JavaScript
+            </div>
+            <div class="tech-tile" style="--brand-color: #e34f26">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-html" /></svg>
+              HTML5
+            </div>
+            <div class="tech-tile" style="--brand-color: #1572b6">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-css" /></svg>
+              CSS3
+            </div>
+          </div>
+          <h4 class="tech-category" data-en="Data and tools">Dados e ferramentas</h4>
+          <div class="tech-grid reveal">
+            <div class="tech-tile" style="--brand-color: #ffca28">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-firebase" /></svg>
+              Firebase
+            </div>
+            <div class="tech-tile" style="--brand-color: #4f8bd8">
+              <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-database" />
+              </svg>
+              <span data-en="SQL (studying)">SQL (em estudo)</span>
+            </div>
+            <div class="tech-tile" style="--brand-color: #f05032">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-git" /></svg>
+              Git
+            </div>
+            <div class="tech-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github" /></svg>
+              GitHub
+            </div>
+            <div class="tech-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-vercel" /></svg>
+              Vercel
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="s" id="portfolio"><div class="wrap">
-<p class="eb" data-en="My work">Meu trabalho</p>
-<h2 class="rv v">Portfólio</h2>
-<p class="sub rv" data-en="Some projects and certificates that show my growth as a developer.">Alguns projetos e certificados que representam minha evolução como desenvolvedor.</p>
-<div class="tabs"><button class="on" data-t="p"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></svg> <span data-en="Projects">Projetos</span></button><button data-t="c"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></svg> <span data-en="Certificates">Certificados</span></button></div>
+      <!-- ===== PORTFÓLIO: projetos e certificados ===== -->
+      <section class="section-block" id="portfolio">
+        <div class="container">
+          <p class="eyebrow" data-en="My work">Meu trabalho</p>
+          <h2 class="reveal title-soft">Portfólio</h2>
+          <p
+            class="section-sub reveal"
+            data-en="Some projects and certificates that show my growth as a developer."
+          >
+            Alguns projetos e certificados que representam minha evolução como desenvolvedor.
+          </p>
+          <div class="tabs">
+            <button class="active" data-tab="projects">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-code-xml" />
+              </svg>
+              <span data-en="Projects">Projetos</span>
+            </button>
+            <button data-tab="certificates">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-award" /></svg>
+              <span data-en="Certificates">Certificados</span>
+            </button>
+          </div>
 
-<div class="carw" id="pane-p">
-<button class="arr l" aria-label="Anterior"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg></button><button class="arr r" aria-label="Próximo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></button>
-<div class="car">
-<article class="card"><span class="badge" data-en="In progress">Em construção</span><div class="shot s4" aria-hidden="true"></div><h4 data-en="REST API with authentication">API REST com autenticação</h4><p data-en="Full CRUD, JWT login, validation, SQL database, automated tests and Swagger docs.">CRUD completo, login com JWT, validação, banco SQL, testes automatizados e documentação com Swagger.</p><div class="tg">Node.js · Express · JWT · SQL</div><div class="cl"><a href="https://github.com/gustavo-olvr" data-en="Follow along ↗">Acompanhar ↗</a></div></article>
-<article class="card"><span class="badge" data-en="Live">No ar</span><div class="shot s1" aria-hidden="true"></div><h4>Oikawa Flores</h4><p data-en="Organize the processes of a flower business in a single place, with a React interface and data in Firebase.">Organizar os processos de uma operação de flores em um só lugar, com interface em React e dados no Firebase.</p><div class="tg">React · Firebase</div><div class="cl"><a href="https://sistema-flores.vercel.app" data-en="View live ↗">Ver online ↗</a><a href="https://github.com/gustavo-olvr" data-en="Code ↗">Código ↗</a></div></article>
-<article class="card"><span class="badge" data-en="Live">No ar</span><div class="shot s2" aria-hidden="true"></div><h4>Yurig Events</h4><p data-en="Present event information clearly, in responsive pages for phone and desktop.">Apresentar informações de eventos com clareza, em páginas responsivas para celular e computador.</p><div class="tg">HTML · CSS · JavaScript</div><div class="cl"><a href="https://projeto-teste-yuri.vercel.app" data-en="View live ↗">Ver online ↗</a><a href="https://github.com/gustavo-olvr" data-en="Code ↗">Código ↗</a></div></article>
-<article class="card"><span class="badge" data-en="Real client">Cliente real</span><div class="shot s3" aria-hidden="true"></div><h4>Leo Gruber</h4><p data-en="A nutritionist needed his own online presence: I gathered the requirements, built and published the site.">Um nutricionista precisava de presença online própria: levantei as necessidades, desenvolvi e publiquei o site.</p><div class="tg">HTML · CSS · JavaScript</div><div class="cl"><a href="https://projeto-leo-gruber-c85w5fb6d-gustavo-olvrs-projects.vercel.app/" data-en="View live ↗">Ver online ↗</a><a href="https://github.com/gustavo-olvr" data-en="Code ↗">Código ↗</a></div></article>
-</div><div class="dots"></div></div>
+          <div class="carousel" id="pane-projects">
+            <button class="carousel-arrow prev" aria-label="Anterior">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-arrow-left" />
+              </svg>
+            </button>
+            <button class="carousel-arrow next" aria-label="Próximo">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-arrow-right" />
+              </svg>
+            </button>
+            <div class="carousel-track">
+              <article class="card">
+                <span class="badge" data-en="In progress">Em construção</span>
+                <div class="project-shot shot-plain" aria-hidden="true"></div>
+                <h4 data-en="REST API with authentication">API REST com autenticação</h4>
+                <p
+                  data-en="Full CRUD, JWT login, validation, SQL database, automated tests and Swagger docs."
+                >
+                  CRUD completo, login com JWT, validação, banco SQL, testes automatizados e
+                  documentação com Swagger.
+                </p>
+                <div class="project-tags">Node.js · Express · JWT · SQL</div>
+                <div class="project-links">
+                  <a href="https://github.com/gustavo-olvr" data-en="Follow along ↗">
+                    Acompanhar ↗
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <span class="badge" data-en="Live">No ar</span>
+                <div class="project-shot shot-sidebar" aria-hidden="true"></div>
+                <h4>Oikawa Flores</h4>
+                <p
+                  data-en="Organize the processes of a flower business in a single place, with a React interface and data in Firebase."
+                >
+                  Organizar os processos de uma operação de flores em um só lugar, com interface em
+                  React e dados no Firebase.
+                </p>
+                <div class="project-tags">React · Firebase</div>
+                <div class="project-links">
+                  <a href="https://sistema-flores.vercel.app" data-en="View live ↗">Ver online ↗</a>
+                  <a href="https://github.com/gustavo-olvr" data-en="Code ↗">Código ↗</a>
+                </div>
+              </article>
+              <article class="card">
+                <span class="badge" data-en="Live">No ar</span>
+                <div class="project-shot shot-banner" aria-hidden="true"></div>
+                <h4>Yurig Events</h4>
+                <p
+                  data-en="Present event information clearly, in responsive pages for phone and desktop."
+                >
+                  Apresentar informações de eventos com clareza, em páginas responsivas para celular
+                  e computador.
+                </p>
+                <div class="project-tags">HTML · CSS · JavaScript</div>
+                <div class="project-links">
+                  <a href="https://projeto-teste-yuri.vercel.app" data-en="View live ↗">
+                    Ver online ↗
+                  </a>
+                  <a href="https://github.com/gustavo-olvr" data-en="Code ↗">Código ↗</a>
+                </div>
+              </article>
+              <article class="card">
+                <span class="badge" data-en="Real client">Cliente real</span>
+                <div class="project-shot shot-side-right" aria-hidden="true"></div>
+                <h4>Leo Gruber</h4>
+                <p
+                  data-en="A nutritionist needed his own online presence: I gathered the requirements, built and published the site."
+                >
+                  Um nutricionista precisava de presença online própria: levantei as necessidades,
+                  desenvolvi e publiquei o site.
+                </p>
+                <div class="project-tags">HTML · CSS · JavaScript</div>
+                <div class="project-links">
+                  <a
+                    href="https://projeto-leo-gruber-c85w5fb6d-gustavo-olvrs-projects.vercel.app/"
+                    data-en="View live ↗"
+                  >
+                    Ver online ↗
+                  </a>
+                  <a href="https://github.com/gustavo-olvr" data-en="Code ↗">Código ↗</a>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
 
-<div class="carw" id="pane-c" hidden>
-<button class="arr l" aria-label="Anterior"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg></button><button class="arr r" aria-label="Próximo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></button>
-<div class="car">
-<article class="card"><span class="badge" data-en="In progress">Em andamento</span><h4>Backend Fullstack</h4><p data-en="OneBitCode course: Node.js, Express, JWT and SQL. The certificate will appear here when I finish.">Curso da OneBitCode: Node.js, Express, JWT e SQL. O certificado aparece aqui quando eu concluir.</p></article>
-<article class="card ph"><div><h4 data-en="Your next certificate">Próximo certificado</h4><p data-en="Space for new courses and certifications.">Espaço para novos cursos e certificações.</p></div></article>
-<article class="card ph"><div><h4 data-en="Your next certificate">Próximo certificado</h4><p data-en="Space for new courses and certifications.">Espaço para novos cursos e certificações.</p></div></article>
-</div><div class="dots"></div></div>
-</div></section>
+          <div class="carousel" id="pane-certificates" hidden>
+            <button class="carousel-arrow prev" aria-label="Anterior">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-arrow-left" />
+              </svg>
+            </button>
+            <button class="carousel-arrow next" aria-label="Próximo">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#i-arrow-right" />
+              </svg>
+            </button>
+            <div class="carousel-track">
+              <article class="card card-certificate">
+                <a
+                  class="certificate-image"
+                  href="assets/img/certificates/javascript-2.jpg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="assets/img/certificates/javascript-2.jpg"
+                    alt="Certificado de JavaScript II da OneBitCode"
+                    width="1000"
+                    height="707"
+                    loading="lazy"
+                  />
+                </a>
+                <span class="badge">OneBitCode</span>
+                <h4>JavaScript II</h4>
+                <p
+                  data-en="Higher-order, anonymous and recursive functions, scope and parameters, advanced array and object handling, data structures and hands-on projects like a geometry calculator and a property registry."
+                >
+                  Funções de alta ordem, anônimas e recursivas, escopo e parâmetros, manipulação
+                  avançada de arrays e objetos, estruturas de dados e projetos práticos como
+                  calculadora geométrica e cadastro de imóveis.
+                </p>
+                <ul class="certificate-meta">
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-calendar" />
+                    </svg>
+                    <span data-en="Completed on June 11, 2025">
+                      Concluído em 11 de junho de 2025
+                    </span>
+                  </li>
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-clock" />
+                    </svg>
+                    <span data-en="Workload: 12h">Carga horária: 12h</span>
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="assets/img/certificates/javascript-2.jpg"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="View certificate ↗"
+                  >
+                    Ver certificado ↗
+                  </a>
+                </div>
+              </article>
+              <article class="card card-certificate">
+                <a
+                  class="certificate-image"
+                  href="assets/img/certificates/javascript-1.jpg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="assets/img/certificates/javascript-1.jpg"
+                    alt="Certificado de JavaScript I da OneBitCode"
+                    width="1000"
+                    height="707"
+                    loading="lazy"
+                  />
+                </a>
+                <span class="badge">OneBitCode</span>
+                <h4>JavaScript I</h4>
+                <p
+                  data-en="Variables and data types, operators, conditionals (if/else and switch), loops (for, while and do while), HTML integration and hands-on projects like a user registry, calculator and unit converter."
+                >
+                  Variáveis e tipos de dados, operadores, condicionais (if/else e switch), laços
+                  (for, while e do while), integração com HTML e projetos práticos como cadastro de
+                  usuário, calculadora e conversor de medidas.
+                </p>
+                <ul class="certificate-meta">
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-calendar" />
+                    </svg>
+                    <span data-en="Completed on April 9, 2025">
+                      Concluído em 9 de abril de 2025
+                    </span>
+                  </li>
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-clock" />
+                    </svg>
+                    <span data-en="Workload: 8h">Carga horária: 8h</span>
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="assets/img/certificates/javascript-1.jpg"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="View certificate ↗"
+                  >
+                    Ver certificado ↗
+                  </a>
+                </div>
+              </article>
+              <article class="card card-certificate">
+                <a
+                  class="certificate-image"
+                  href="assets/img/certificates/css3.jpg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="assets/img/certificates/css3.jpg"
+                    alt="Certificado de CSS 3 da OneBitCode"
+                    width="1000"
+                    height="707"
+                    loading="lazy"
+                  />
+                </a>
+                <span class="badge">OneBitCode</span>
+                <h4>CSS 3</h4>
+                <p
+                  data-en="Basic and advanced selectors, specificity and inheritance, units, variables, Box Model, Google Fonts, backgrounds and borders, hands-on HTML and CSS projects and debugging with DevTools."
+                >
+                  Seletores básicos e avançados, especificidade e herança, unidades de medida,
+                  variáveis, Box Model, Google Fonts, backgrounds e borders, projetos práticos em
+                  HTML e CSS e depuração com DevTools.
+                </p>
+                <ul class="certificate-meta">
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-calendar" />
+                    </svg>
+                    <span data-en="Completed on February 2, 2025">
+                      Concluído em 2 de fevereiro de 2025
+                    </span>
+                  </li>
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-clock" />
+                    </svg>
+                    <span data-en="Workload: 14h">Carga horária: 14h</span>
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="assets/img/certificates/css3.jpg"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="View certificate ↗"
+                  >
+                    Ver certificado ↗
+                  </a>
+                </div>
+              </article>
+              <article class="card card-certificate">
+                <a
+                  class="certificate-image"
+                  href="assets/img/certificates/html5.jpg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="assets/img/certificates/html5.jpg"
+                    alt="Certificado de HTML 5 da OneBitCode"
+                    width="1000"
+                    height="707"
+                    loading="lazy"
+                  />
+                </a>
+                <span class="badge">OneBitCode</span>
+                <h4>HTML 5</h4>
+                <p
+                  data-en="Web page structure, headings and paragraphs, images and optimization, links and URLs, lists, tables, forms and input types, semantic elements, WAI-ARIA accessibility and modern HTML5 features."
+                >
+                  Estrutura de uma página web, títulos e parágrafos, imagens e otimização, links e
+                  URLs, listas, tabelas, formulários e tipos de input, elementos semânticos,
+                  acessibilidade com WAI-ARIA e recursos modernos do HTML5.
+                </p>
+                <ul class="certificate-meta">
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-calendar" />
+                    </svg>
+                    <span data-en="Completed on January 1, 2025">
+                      Concluído em 1 de janeiro de 2025
+                    </span>
+                  </li>
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <use href="#i-clock" />
+                    </svg>
+                    <span data-en="Workload: 12h">Carga horária: 12h</span>
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="assets/img/certificates/html5.jpg"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="View certificate ↗"
+                  >
+                    Ver certificado ↗
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <span class="badge" data-en="In progress">Em andamento</span>
+                <h4>Backend Fullstack</h4>
+                <p
+                  data-en="OneBitCode course: Node.js, Express, JWT and SQL. The certificate will appear here when I finish."
+                >
+                  Curso da OneBitCode: Node.js, Express, JWT e SQL. O certificado aparece aqui
+                  quando eu concluir.
+                </p>
+              </article>
+              <article class="card card-placeholder">
+                <div>
+                  <h4 data-en="Your next certificate">Próximo certificado</h4>
+                  <p data-en="Space for new courses and certifications.">
+                    Espaço para novos cursos e certificações.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </section>
 
-<section class="s" id="contato"><div class="wrap">
-<p class="eb" data-en="Get in touch">Entre em contato</p>
-<h2 class="rv v" data-en="Let’s talk">Vamos conversar</h2>
-<p class="sub rv" data-en="Got an opportunity or want to exchange ideas? Reach out through any of the channels below.">Tem uma oportunidade ou quer trocar uma ideia? Entre em contato por um dos canais abaixo.</p>
-<div class="ct rv">
-<div class="card"><h3 class="t" data-en="Send a message">Envie uma mensagem</h3>
-<p class="hint" data-en="When you send, your email app opens with the message ready.">Ao enviar, seu app de e-mail abre com a mensagem pronta.</p>
-<div class="fl"><div><label for="f-n" data-en="Name">Nome</label><input id="f-n" placeholder="Seu nome" data-enp="Your name" autocomplete="name"></div><div><label for="f-e">E-mail</label><input id="f-e" type="email" placeholder="seu@email.com" data-enp="you@email.com" autocomplete="email"></div></div>
-<label for="f-a" data-en="Subject">Assunto</label><input id="f-a" placeholder="Como posso ajudar?" data-enp="How can I help?">
-<label for="f-m" data-en="Message">Mensagem</label><textarea id="f-m" placeholder="Escreva sua mensagem" data-enp="Write your message"></textarea>
-<button class="btn p" id="f-s" style="margin-top:18px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></svg> <span data-en="Send message">Enviar mensagem</span></button></div>
-<div>
-<a class="card ch" href="https://www.linkedin.com/in/gustavo-oliveira-dev"><i><svg class="ic f" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></i><div><b>LinkedIn</b><span data-en="Connect with me on LinkedIn">Conecte-se comigo no LinkedIn</span></div><em>↗</em></a>
-<a class="card ch" href="https://github.com/gustavo-olvr"><i><svg class="ic f" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></i><div><b>GitHub</b><span data-en="See my projects on GitHub">Veja meus projetos no GitHub</span></div><em>↗</em></a>
-<a class="card ch" href="mailto:gustavo098122@gmail.com"><i><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></i><div><b>E-mail</b><span>gustavo098122@gmail.com</span></div><em>↗</em></a>
-</div>
-</div>
-</div></section>
-</main>
-<footer><div class="wrap"><span>© 2026 Gustavo Oliveira</span><a href="#inicio" data-en="Back to top ↑">Voltar ao topo ↑</a></div></footer>
-<div id="toast" role="status"></div>
+      <!-- ===== CONTATO ===== -->
+      <section class="section-block" id="contato">
+        <div class="container">
+          <p class="eyebrow" data-en="Get in touch">Entre em contato</p>
+          <h2 class="reveal title-soft" data-en="Let’s talk">Vamos conversar</h2>
+          <p
+            class="section-sub reveal"
+            data-en="Got an opportunity or want to exchange ideas? Reach out through any of the channels below."
+          >
+            Tem uma oportunidade ou quer trocar uma ideia? Entre em contato por um dos canais
+            abaixo.
+          </p>
+          <div class="contact-grid reveal">
+            <div class="card">
+              <h3 class="form-title" data-en="Send a message">Envie uma mensagem</h3>
+              <p
+                class="form-hint"
+                data-en="When you send, your email app opens with the message ready."
+              >
+                Ao enviar, seu app de e-mail abre com a mensagem pronta.
+              </p>
+              <div class="form-row">
+                <div>
+                  <label for="field-name" data-en="Name">Nome</label>
+                  <input
+                    id="field-name"
+                    placeholder="Seu nome"
+                    data-en-placeholder="Your name"
+                    autocomplete="name"
+                  />
+                </div>
+                <div>
+                  <label for="field-email">E-mail</label>
+                  <input
+                    id="field-email"
+                    type="email"
+                    placeholder="seu@email.com"
+                    data-en-placeholder="you@email.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+              <label for="field-subject" data-en="Subject">Assunto</label>
+              <input
+                id="field-subject"
+                placeholder="Como posso ajudar?"
+                data-en-placeholder="How can I help?"
+              />
+              <label for="field-message" data-en="Message">Mensagem</label>
+              <textarea
+                id="field-message"
+                placeholder="Escreva sua mensagem"
+                data-en-placeholder="Write your message"
+              ></textarea>
+              <button class="btn btn-primary form-submit" id="btn-send">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <use href="#i-send" />
+                </svg>
+                <span data-en="Send message">Enviar mensagem</span>
+              </button>
+            </div>
+            <div>
+              <a class="card channel" href="https://www.linkedin.com/in/gustavo-oliveira-dev">
+                <i>
+                  <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#i-linkedin" />
+                  </svg>
+                </i>
+                <div>
+                  <b>LinkedIn</b>
+                  <span data-en="Connect with me on LinkedIn">Conecte-se comigo no LinkedIn</span>
+                </div>
+                <em>↗</em>
+              </a>
+              <a class="card channel" href="https://github.com/gustavo-olvr">
+                <i>
+                  <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#i-github" />
+                  </svg>
+                </i>
+                <div>
+                  <b>GitHub</b>
+                  <span data-en="See my projects on GitHub">Veja meus projetos no GitHub</span>
+                </div>
+                <em>↗</em>
+              </a>
+              <a class="card channel" href="mailto:gustavo098122@gmail.com">
+                <i>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#i-mail" />
+                  </svg>
+                </i>
+                <div>
+                  <b>E-mail</b>
+                  <span>gustavo098122@gmail.com</span>
+                </div>
+                <em>↗</em>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+      <div class="container">
+        <span>© 2026 Gustavo Oliveira</span>
+        <a href="#inicio" data-en="Back to top ↑">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+    <!-- ===== AVISO (toast) ===== -->
+    <div id="toast" role="status"></div>
 
-<script src="js/main.js" defer></script>
-</body>
+    <!-- ===== ÍCONES (sprite SVG): cada <symbol> é usado em cima por um <use>. Não precisa editar. ===== -->
+    <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-arrow-left" viewBox="0 0 24 24">
+        <path d="m12 19-7-7 7-7" />
+        <path d="M19 12H5" />
+      </symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <path
+          d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0
+            l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+        />
+        <circle cx="12" cy="8" r="6" />
+      </symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24">
+        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        <rect width="20" height="14" x="2" y="6" rx="2" />
+      </symbol>
+      <symbol id="i-code-xml" viewBox="0 0 24 24">
+        <path d="m18 16 4-4-4-4" />
+        <path d="m6 8-4 4 4 4" />
+        <path d="m14.5 4-5 16" />
+      </symbol>
+      <symbol id="i-css" viewBox="0 0 24 24">
+        <path
+          d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84
+            A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608
+            c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296
+            q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688
+            h1.68
+            c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816
+            q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448
+            m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608
+            c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84
+            s.288.888.792 1.08
+            c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688
+            h1.68
+            c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936
+            s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018
+            c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336
+            c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864
+            v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264
+            c.168-.24.192-.552.168-.84h1.776
+            c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032
+            c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"
+        />
+      </symbol>
+      <symbol id="i-database" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+        <path d="M3 12A9 3 0 0 0 21 12" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 15V3" />
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <path d="m7 10 5 5 5-5" />
+      </symbol>
+      <symbol id="i-express" viewBox="0 0 24 24">
+        <path
+          d="M12.262 16.666h1.146l6.975-9.325H19.22zm9.778 1.441v.004
+            l-4.334-5.706-.557.74 4.873 6.682H.945V4.173h9.505
+            l5.026 6.7.574-.772-4.374-5.928h.003l-.719-.945H0v17.544h24zM10.917 8.705
+            a3.8 3.8 0 0 0-1.292-1.183q-.796-.45-1.916-.45c-.746 0-1.37.14-1.906.424
+            a3.76 3.76 0 0 0-1.31 1.12 4.9 4.9 0 0 0-.75 1.581 7.17 7.17 0 0 0 0 3.696
+            c.148.567.402 1.101.75 1.573a3.5 3.5 0 0 0 1.31 1.066
+            q.803.39 1.906.389 1.77 0 2.739-.868.966-.867 1.328-2.457h-1.139
+            q-.271 1.084-.977 1.734-.704.651-1.952.65-.812 0-1.392-.342
+            a3.1 3.1 0 0 1-.957-.869 3.5 3.5 0 0 1-.551-1.182 5 5 0 0 1-.17-1.133 9 9 0 0 0-.015-.286 4.5 4.5 0 0 1 .015-.829
+            c.047-.418.147-.83.296-1.223A3.7 3.7 0 0 1 5.54 9.05a2.9 2.9 0 0 1 .922-.742
+            q.541-.28 1.246-.28c.47 0 .869.093 1.23.28q.541.281.922.742.379.461.587 1.057
+            t.225 1.246H5.625l.004.957h6.182a7.3 7.3 0 0 0-.18-1.924 4.9 4.9 0 0 0-.715-1.68
+            z"
+        />
+      </symbol>
+      <symbol id="i-firebase" viewBox="0 0 24 24">
+        <path
+          d="M19.455 8.369
+            c-.538-.748-1.778-2.285-3.681-4.569-.826-.991-1.535-1.832-1.884-2.245
+            a146 146 0 0 0-.488-.576l-.207-.245-.113-.133-.022-.032-.01-.005L12.57 0
+            l-.609.488
+            c-1.555 1.246-2.828 2.851-3.681 4.64-.523 1.064-.864 2.105-1.043 3.176-.047.241-.088.489-.121.738-.209-.017-.421-.028-.632-.033-.018-.001-.035-.002-.059-.003
+            a7.46 7.46 0 0 0-2.28.274l-.317.089-.163.286
+            c-.765 1.342-1.198 2.869-1.252 4.416-.07 2.01.477 3.954 1.583 5.625 1.082 1.633 2.61 2.882 4.42 3.611
+            l.236.095.071.025.003-.001a9.59 9.59 0 0 0 2.941.568q.171.006.342.006
+            c1.273 0 2.513-.249 3.69-.742l.008.004.313-.145a9.63 9.63 0 0 0 3.927-3.335
+            c1.01-1.49 1.577-3.234 1.641-5.042.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695
+            c.328 1.244.264 2.44-.191 3.558-1.135-1.12-1.967-2.352-2.475-3.665-.543-1.404-.87-2.74-.974-3.975.48.157.922.366 1.315.622 1.132.737 1.914 1.902 2.325 3.461
+            zm.207 6.022c.482.368.99.712 1.513 1.028-.771.21-1.565.302-2.369.273
+            a8 8 0 0 1-.373-.022c.458-.394.869-.823 1.228-1.279zm1.347-6.431
+            c-.516-1.957-1.527-3.437-3.002-4.398-.647-.421-1.385-.741-2.194-.95.011-.134.026-.268.043-.4.014-.113.03-.216.046-.313.133-.689.332-1.37.589-2.025.099-.25.206-.499.321-.74
+            l.004-.008c.177-.358.376-.719.61-1.105l.092-.152-.003-.001
+            c.544-.851 1.197-1.627 1.942-2.311l.288.341
+            c.672.796 1.304 1.548 1.878 2.237 1.291 1.549 2.966 3.583 3.612 4.48 1.277 1.771 1.893 3.579 1.83 5.375-.049 1.395-.461 2.755-1.195 3.933-.694 1.116-1.661 2.05-2.8 2.708-.636-.318-1.559-.839-2.539-1.599.79-1.575.952-3.28.479-5.072
+            zm-2.575 5.397c-.725.939-1.587 1.55-2.09 1.856-.081-.029-.163-.06-.243-.093
+            l-.065-.026
+            c-1.49-.616-2.747-1.656-3.635-3.01-.907-1.384-1.356-2.993-1.298-4.653.041-1.19.338-2.327.882-3.379.316-.07.638-.114.96-.131
+            l.084-.002
+            c.162-.003.324-.003.478 0 .227.011.454.035.677.07.073 1.513.445 3.145 1.105 4.852.637 1.644 1.694 3.162 3.144 4.515
+            z"
+        />
+      </symbol>
+      <symbol id="i-git" viewBox="0 0 24 24">
+        <path
+          d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179
+            l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0
+            V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634
+            a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0
+            l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"
+        />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M12 .297
+            c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
+            C4.422 18.07 3.633 17.7 3.633 17.7
+            c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57
+            C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+        />
+      </symbol>
+      <symbol id="i-graduation-cap" viewBox="0 0 24 24">
+        <path
+          d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08
+            a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+        />
+        <path d="M22 10v6" />
+        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+      </symbol>
+      <symbol id="i-html" viewBox="0 0 24 24">
+        <path
+          d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75
+            l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126
+            l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351
+            l5.379-1.443.744-8.157H8.531z"
+        />
+      </symbol>
+      <symbol id="i-js" viewBox="0 0 24 24">
+        <path
+          d="M0 0h24v24H0V0zm22.034 18.276
+            c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034
+            l-.705.089
+            c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336
+            l-1.83 1.051
+            c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65
+            l.046.067zm-8.983-7.245h-2.248
+            c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196
+            l-1.825 1.125
+            c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179
+            l.004-.056z"
+        />
+      </symbol>
+      <symbol id="i-jwt" viewBox="0 0 24 24">
+        <path
+          d="M10.2 0v6.456L12 8.928l1.8-2.472V0zm3.6 6.456v3.072l2.904-.96L20.52 3.36
+            l-2.928-2.136zm2.904 2.112l-1.8 2.496 2.928.936 6.144-1.992-1.128-3.432z
+            M17.832 12l-2.928.936 1.8 2.496 6.144 1.992 1.128-3.432zm-1.128 3.432l-2.904-.96
+            v3.072l3.792 5.232 2.928-2.136zM13.8 17.544L12 15.072l-1.8 2.472V24h3.6zm-3.6 0
+            v-3.072l-2.904.96L3.48 20.64l2.928 2.136zm-2.904-2.112l1.8-2.496
+            L6.168 12 .024 13.992l1.128 3.432zM6.168 12
+            l2.928-.936-1.8-2.496-6.144-1.992-1.128 3.432zm1.128-3.432l2.904.96V6.456
+            L6.408 1.224 3.48 3.36Z"
+        />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path
+          d="M20.447 20.452h-3.554v-5.569
+            c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9
+            h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455
+            v6.286zM5.337 7.433
+            c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065
+            zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542
+            C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729
+            C24 .774 23.2 0 22.222 0h.003z"
+        />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+      </symbol>
+      <symbol id="i-network" viewBox="0 0 24 24">
+        <rect x="16" y="16" width="6" height="6" rx="1" />
+        <rect x="2" y="16" width="6" height="6" rx="1" />
+        <rect x="9" y="2" width="6" height="6" rx="1" />
+        <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" />
+        <path d="M12 12V8" />
+      </symbol>
+      <symbol id="i-nodejs" viewBox="0 0 24 24">
+        <path
+          d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737
+            c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604
+            c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0
+            l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921
+            c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 
+            L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15
+            c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89
+            V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253
+            v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675
+            c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603
+            l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082
+            c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604
+            l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 
+            c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187
+            c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607
+            c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 
+            c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076
+            c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695
+            c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 
+            c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137
+            c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248
+            C17.501,17.007,19.099,15.91,19.099,13.993z"
+        />
+      </symbol>
+      <symbol id="i-react" viewBox="0 0 24 24">
+        <path
+          d="M14.23 12.004
+            a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236
+            zm2.648-10.69
+            c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365
+            C1.98 8.917 0 10.42 0 12.004
+            c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365
+            C22.02 15.096 24 13.59 24 12.004
+            c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278
+            zm-.005 1.09v.006
+            c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295
+            zm-9.77.02
+            c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132
+            zm4.882 3.05
+            c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565
+            zM12 8.1
+            c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098
+            zm-3.635.254
+            c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386
+            zm7.26 0
+            c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146
+            zm3.063.675
+            c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964
+            zm-13.395.004
+            c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494
+            zm11.678 4.28
+            c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18
+            zm-9.945.02
+            c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933
+            zM17.92 16.32
+            c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54
+            zm-11.83.01
+            c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438
+            zm4.56.64
+            c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565
+            z"
+        />
+      </symbol>
+      <symbol id="i-send" viewBox="0 0 24 24">
+        <path
+          d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5
+            a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+        />
+        <path d="m21.854 2.147-10.94 10.939" />
+      </symbol>
+      <symbol id="i-vercel" viewBox="0 0 24 24"><path d="m12 1.608 12 20.784H0Z" /></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24">
+        <path d="M8 2v3" />
+        <path d="M16 2v3" />
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M3 9h18" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </symbol>
+      <symbol id="i-external-link" viewBox="0 0 24 24">
+        <path d="M15 3h6v6" />
+        <path d="M10 14 21 3" />
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      </symbol>
+    </svg>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
