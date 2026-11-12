@@ -13,7 +13,7 @@
 
 /* ===== 1. CONFIGURAÇÃO ===== */
 // Depois de colocar o PDF em assets/docs/, preencha. Ex.: 'assets/docs/curriculo.pdf'
-const RESUME_URL = "";
+const RESUME_URL = "assets/docs/curriculo.pdf";
 const EMAIL = "gustavo098122@gmail.com";
 
 /* ===== 2. UTILITÁRIOS ===== */
